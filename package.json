@@ -1,0 +1,16 @@
+{
+  "name": "bdw_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:dev": "sass --watch --embed-source-map src/scss:public/styles",
+    "sass:prod": "sass --no-source-map --style compressed src/scss:public/styles"
+  },
+  "author": "Bartosz Kuklewski",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}

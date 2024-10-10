@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Figtree--black";
+  src: url(../fonts/Figtree-Black.ttf);
+}
+@font-face {
+  font-family: "Figtree--regular";
+  src: url(../fonts/Figtree-Regular.ttf);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/fonts.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;EACA;;AAGJ;EACI;EACA%22,%22file%22:%22fonts.css%22%7D */
