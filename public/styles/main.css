@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .bdw-c-header .bdw-c-event_date_container {
   display: flex;
@@ -59,16 +59,20 @@ body {
 .bdw-c-main .bdw-c-title {
   grid-column: 1/-1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: "Figtree--black";
   font-size: 10vw;
   text-wrap: nowrap;
   line-height: 1em;
   text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+.bdw-c-main .bdw-c-title .bdw-l-span:last-child {
+  transform: translateX(-0.5rem);
 }
 .bdw-c-main .bdw-c-category {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .bdw-c-main .bdw-c-category__name {
   font-family: "Figtree--black";
@@ -78,14 +82,11 @@ body {
 .bdw-c-main .bdw-c-category__description {
   font-family: "Figtree--regular";
 }
-.bdw-c-main .bdw-c-social_media, .bdw-c-main .bdw-c-sponsors {
-  grid-column: span 2;
-}
 .bdw-c-main .bdw-c-social_media {
   display: flex;
 }
 .bdw-c-main .bdw-c-social_media__content {
-  padding: 0.5rem;
+  padding: 1rem;
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -118,18 +119,30 @@ body {
 }
 .bdw-c-main .bdw-c-social_media__graphic .bdw-l-image_container {
   position: relative;
-  width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bdw-c-main .bdw-c-social_media__graphic .bdw-l-image_container img {
   width: 100%;
   position: absolute;
   object-fit: cover;
-  aspect-ratio: 1/1;
 }
-.bdw-c-main .bdw-c-sponsors {
-  padding: 0.5rem;
+.bdw-c-main .bdw-c-partners {
+  padding: 1rem;
+}
+.bdw-c-main .bdw-c-partners .bdw-c-parters_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bdw-c-main .bdw-c-partners .bdw-c-parters_container .bdw-c-partner_logo_container {
+  margin: 15px;
+}
+.bdw-c-main .bdw-c-partners .bdw-c-parters_container .bdw-c-partner_logo_container .bdw-c-partner_logo {
+  height: 50px;
 }
 
 .bdw-l-grid {
@@ -150,5 +163,31 @@ body {
   font-size: 24px;
   margin-bottom: 0.5em;
 }
+.bdw-l-grid .bdw-l-grid_span {
+  grid-column: span 2;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_base.scss%22,%22../../src/scss/fonts.scss%22,%22../../src/scss/main.scss%22,%22../../src/scss/_variables.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAGJ;EACA;;;AAGA;EACA;EACA;;;AAGA;EACI;EACA;;;ACfJ;EACI;EACA;;AAGJ;EACI;EACA;;ACHJ;EACI,kBCJc;EDKd,OCJc;;;ADOlB;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI,aCrBa;EDsBb;;AAIR;EACI,aC1BmB;;;AD8B3B;EAEI;;AAEA;EACI;EAEA;EACA;EACA;EAEA,aC1CiB;ED2CjB;EACA;EACA;EAGA;;AAIJ;EACI;;AAEA;EACI,aCxDa;EDyDb;EACA;;AAGJ;EACI,aC7De;;ADiEvB;EACI;;AAGJ;EACI;;AAEA;EACI;EACA;EAEA;EACA;EACA;;AAEA;EACI,kBCvFE;EDwFF;EACA;EACA,OC3FE;ED4FF;EACA;EACA;EACA,aCxFW;EDyFX;;AAIA;EACI;EACA;EACA;EACA,aCjGO;;ADmGP;EACI;;AAOhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAMhB;EACI;;;AAIR;EACI;EACA;EACA;EACA;EAGA,kBClJc;EDmJd;EACA;;AAEA;EACI,kBCxJU;EDyJV;;AAEA;EACI,aCtJa;EDuJb;EACA%22,%22file%22:%22main.css%22%7D */
+@media only screen and (max-width: 1100px) and (min-width: 560px) {
+  .bdw-l-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto repeat(4, minmax(0, 1fr));
+  }
+  .bdw-c-social_media__graphic img {
+    width: auto !important;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .bdw-l-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: auto repeat(6, minmax(0, 1fr));
+  }
+  .bdw-l-grid .bdw-l-grid_span {
+    grid-column: span 1;
+  }
+  .bdw-c-social_media__graphic {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_base.scss%22,%22../../src/scss/fonts.scss%22,%22../../src/scss/main.scss%22,%22../../src/scss/_variables.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAGJ;EACA;;;AAGA;EACA;EACA;;;AAGA;EACI;EACA;;;ACfJ;EACI;EACA;;AAGJ;EACI;EACA;;ACHJ;EACI,kBCJc;EDKd,OCJc;;;ADOlB;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI,aCrBa;EDsBb;;AAIR;EACI,aC1BmB;;;AD8B3B;EAEI;;AAEA;EACI;EAEA;EACA;EACA;EAEA,aC1CiB;ED2CjB;EACA;EACA;EAGA;EAEA;;AAEA;EACI;;AAKR;EACI;;AAEA;EACI,aC9Da;ED+Db;EACA;;AAGJ;EACI,aCnEe;;ADuEvB;EACI;;AAEA;EACI;EACA;EAEA;EACA;EACA;;AAEA;EACI,kBCzFE;ED0FF;EACA;EACA,OC7FE;ED8FF;EACA;EACA;EACA,aC1FW;ED2FX;;AAIA;EACI;EACA;EACA;EACA,aCnGO;;ADqGP;EACI;;AAOhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAMhB;EACI;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AACA;EACI;;;AAOpB;EACI;EACA;EACA;EACA;EAGA,kBClKc;EDmKd;EACA;;AAEA;EACI,kBCxKU;EDyKV;;AAEA;EACI,aCtKa;EDuKb;EACA;;AAIR;EACI;;;AAIR;EACI;IACI;IACA;;EAKI;IACI;IACA;;;AAMhB;EACI;IAEI;IACA;;EAEA;IACI;;EAKJ;IACI%22,%22file%22:%22main.css%22%7D */
