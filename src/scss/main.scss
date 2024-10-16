@@ -27,7 +27,7 @@ body {
 
         .bdw-c-event_date {
             font-family: v.$bdw-font-family--title;
-            font-size: 1.5rem;
+            font-size: v.$bdw-font-size--l;
         }
     }
 
@@ -42,6 +42,7 @@ body {
 
     .bdw-c-title {
         grid-column: 1/-1;
+        padding: 0 0.5rem;
 
         display: flex;
         justify-content: space-between;
@@ -51,11 +52,8 @@ body {
         font-size: 10vw;
         text-wrap: nowrap;
         line-height: 1em;
-        
-
         text-transform: uppercase;
 
-        padding: 0 0.5rem;
 
         .bdw-l-span:last-child {
             transform: translateX(-0.5rem);
@@ -67,13 +65,18 @@ body {
         padding: 1rem;
         
         &__name {
-            font-family: v.$bdw-font-family--title;
-            font-size: 24px;
             margin-bottom: 0.5em;
+
+            font-family: v.$bdw-font-family--title;
+            font-size: v.$bdw-font-size--l;
         }
 
         &__description {
-            font-family: v.$bdw-font-family--content
+            font-family: v.$bdw-font-family--content;
+            font-size: v.$bdw-font-size--m;
+            line-height: 1.5em;
+            text-align: justify;
+            text-indent:2em;
         }
     }
 
@@ -81,30 +84,34 @@ body {
         display: flex;
 
         &__content {
-            padding: 1rem;
             flex: 2;
+            padding: 1rem;
 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
             .bdw-c-register {
-                background-color: v.$bdw-color-light;
                 width: 100%;
                 height: 3em;
-                color: v.$bdw-color-dark;
+
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
+
+                background-color: v.$bdw-color-light;
+
                 font-family: v.$bdw-font-family--content;
-                font-size: 0.8rem;
+                font-size: v.$bdw-font-size--s;
+                color: v.$bdw-color-dark;
             }
 
             .bdw-c-social_media_links {
                 ul {
                     display: flex;
-                    list-style: none;
                     justify-content: space-between;
+
+                    list-style: none;
                     font-family: v.$bdw-font-family--content;
 
                     a {
@@ -116,21 +123,24 @@ body {
         }
 
         &__graphic {
+            position: relative;
+
             flex: 1;
             padding: 0.5rem;
-            position: relative;
             
             .bdw-l-image_container {
                 position: relative;
                 height: 100%;
-                overflow: hidden;
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
+                overflow: hidden;
+
                 img {
-                    width: 100%;
                     position: absolute;
+                    width: 100%;
                     object-fit: cover;
                 }
             }
@@ -142,22 +152,30 @@ body {
 
         .bdw-c-parters_container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
+            flex-wrap: wrap;
 
             .bdw-c-partner_logo_container {
                 margin: 15px;
                 .bdw-c-partner_logo {
-                    height: 50px;
+                    height: 45px;
                 }
             }
+        }
+
+        .bdw-c-partners_label {
+            margin: 1em 0 1em 1em;
+
+            font-family: v.$bdw-font-family--content;
+            font-size: v.$bdw-font-size--m;
         }
     }
 }
 
 .bdw-l-grid {
-    display: grid;
     min-height: 90vh;
+
+    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: auto repeat(2, minmax(0, 1fr));
 
@@ -167,13 +185,14 @@ body {
     border-top: 2px solid v.$bdw-color-light;
 
     &__item {
-        background-color: v.$bdw-color-dark;
         position: relative;
-
+        background-color: v.$bdw-color-dark;
+        
         .bdw-c-grid_title {
+            margin-bottom: 0.5em;
+
             font-family: v.$bdw-font-family--title;
             font-size: 24px;
-            margin-bottom: 0.5em;
         }
     }
 
