@@ -148,7 +148,11 @@ body {
     }
 
     .bdw-c-partners {
-        padding: 1rem; 
+        padding: 1rem;
+
+        #tvpw {
+            background-color: v.$bdw-color-light;
+        }
 
         .bdw-c-parters_container {
             display: flex;
@@ -234,4 +238,3 @@ body {
         }
     }
 }
-
