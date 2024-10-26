@@ -11,6 +11,6 @@
   "author": "Bartosz Kuklewski",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.79.4"
+    "sass": "^1.80.4"
   }
 }
