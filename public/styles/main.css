@@ -139,9 +139,6 @@ body {
 .bdw-c-main .bdw-c-partners {
   padding: 1rem;
 }
-.bdw-c-main .bdw-c-partners #tvpw {
-  background-color: #ffffff;
-}
 .bdw-c-main .bdw-c-partners .bdw-c-parters_container {
   display: flex;
   justify-content: space-around;
@@ -151,7 +148,7 @@ body {
   margin: 15px;
 }
 .bdw-c-main .bdw-c-partners .bdw-c-parters_container .bdw-c-partner_logo_container .bdw-c-partner_logo {
-  height: 60px;
+  height: 65px;
 }
 .bdw-c-main .bdw-c-partners .bdw-c-partners_label {
   margin: 1em 0 1em 1em;
@@ -204,4 +201,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_base.scss%22,%22../../src/scss/fonts.scss%22,%22../../src/scss/main.scss%22,%22../../src/scss/_variables.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAGJ;EACA;;;AAGA;EACA;EACA;;;AAGA;EACI;EACA;;;ACfJ;EACI;EACA;;AAGJ;EACI;EACA;;ACHJ;EACI,kBCJc;EDKd,OCJc;;;ADOlB;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI,aCrBa;EDsBb,WCjBO;;ADqBf;EACI,aC1BmB;;;AD8B3B;EAEI;;AAEA;EACI;EACA;EAEA;EACA;EACA;EAEA,aC3CiB;ED4CjB;EACA;EACA;EACA;;AAGA;EACI;;AAKR;EACI;EACA;;AAEA;EACI;EAEA,aC/Da;EDgEb,WC3DO;;AD8DX;EACI,aCnEe;EDoEf,WCjEO;EDkEP;EACA;EACA;;AAIR;EACI;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EACA;EAEA,kBCrGE;EDuGF,aCjGW;EDkGX,WChGG;EDiGH,OC1GE;;AD8GF;EACI;EACA;EAEA;EACA,aC5GO;;AD8GP;EACI;;AAOhB;EACI;EAEA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;;AAMhB;EACI;;AAEA;EACI,kBCzJM;;AD4JV;EACI;EACA;EACA;;AAEA;EACI;;AACA;EACI;;AAKZ;EACI;EAEA,aCtKe;EDuKf,WCpKO;;;ADyKnB;EACI;EAEA;EACA;EACA;EAGA,kBC1Lc;ED2Ld;EACA;;AAEA;EACI;EACA,kBCjMU;;ADmMV;EACI;EAEA,aChMa;EDiMb;;AAIR;EACI;;;AAIR;EACI;IACI;IACA;;EAKI;IACI;IACA;;;AAMhB;EACI;IAEI;IACA;;EAEA;IACI;;EAKJ;IACI%22,%22file%22:%22main.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_base.scss%22,%22../../src/scss/fonts.scss%22,%22../../src/scss/main.scss%22,%22../../src/scss/_variables.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAGJ;EACA;;;AAGA;EACA;EACA;;;AAGA;EACI;EACA;;;ACfJ;EACI;EACA;;AAGJ;EACI;EACA;;ACHJ;EACI,kBCJc;EDKd,OCJc;;;ADOlB;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI,aCrBa;EDsBb,WCjBO;;ADqBf;EACI,aC1BmB;;;AD8B3B;EAEI;;AAEA;EACI;EACA;EAEA;EACA;EACA;EAEA,aC3CiB;ED4CjB;EACA;EACA;EACA;;AAGA;EACI;;AAKR;EACI;EACA;;AAEA;EACI;EAEA,aC/Da;EDgEb,WC3DO;;AD8DX;EACI,aCnEe;EDoEf,WCjEO;EDkEP;EACA;EACA;;AAIR;EACI;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EACA;EAEA,kBCrGE;EDuGF,aCjGW;EDkGX,WChGG;EDiGH,OC1GE;;AD8GF;EACI;EACA;EAEA;EACA,aC5GO;;AD8GP;EACI;;AAOhB;EACI;EAEA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;;AAMhB;EACI;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AACA;EACI;;AAKZ;EACI;EAEA,aClKe;EDmKf,WChKO;;;ADqKnB;EACI;EAEA;EACA;EACA;EAGA,kBCtLc;EDuLd;EACA;;AAEA;EACI;EACA,kBC7LU;;AD+LV;EACI;EAEA,aC5La;ED6Lb;;AAIR;EACI;;;AAIR;EACI;IACI;IACA;;EAKI;IACI;IACA;;;AAMhB;EACI;IAEI;IACA;;EAEA;IACI;;EAKJ;IACI%22,%22file%22:%22main.css%22%7D */
